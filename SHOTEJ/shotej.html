@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text|Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Shotej Tag</title>
+    <style>
+        
+    *{
+        box-sizing: border-box;
+        padding:0;
+        margin:0;
+    }
+    
+    #page{
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(250, 228, 228, 0.979);
+        font-family: 'Oswald', sans-serif;
+        
+    }
+    #nav{
+        /* border:1px solid brown; */
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        padding:0px 20px 0px 50px;
+        background-color:rgb(255, 255, 255); 
+        
+    }
+    #link a {
+    padding:8px;
+    margin: 2px;
+    text-decoration: none;
+    font-size: 28px;
+    color:rgb(37, 37, 37);
+    text-align: center;
+    border-radius:10px; 
+    /* background-color: rgb(228, 225, 225);
+    box-shadow: 0px 0px 1px 1px rgb(34, 32, 32); */
+    }
+
+    #link a:hover{
+        color: rgb(255, 255, 255);
+        background-color: rgb(36, 36, 36);
+        transition-duration: 400ms;
+        box-shadow: 0px 0px 2px 0px rgb(214, 213, 213);
+        font-size: 30px;
+    }
+
+    #logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        /* border:1px solid brown; */
+        
+    }
+
+    #logo img{
+    width: 40%;
+    height:auto;
+    /* border: 2px solid white; */
+    justify-content: flex-start;
+    }
+
+    #link{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        /* border:1px solid brown; */
+        align-items:center;
+    }
+
+    #homeImage img{
+        height:300px;
+        width:100%
+    }
+
+    #paragraph{
+        text-align:center;
+        font-size: 20px;
+    }
+  #two{
+      display: flex;
+      flex-direction: row; 
+      height: 100vh;
+        width:100vw;
+        background-color: rgba(49, 49, 49, 0.979);
+        font-family: 'Oswald', sans-serif;
+        
+  }
+    #left{
+        width:50%;
+        display: flex;
+        flex-direction: column;
+        border-right:3px solid rgb(13, 160, 49);}
+
+#image-1_cont{
+       height: 35vh;
+   }
+  
+   #image-1{
+       height: auto;
+       width:60%;
+       margin: 0 auto;
+       padding: 30px;
+       /* border: 1px solid green; */
+       display:block;
+   }
+  
+   #para-2 p {
+       padding: 15px;
+       display:flex;
+       align-items: center;
+       font-size: 25px !important;
+       border-top:4px solid rgb(32, 153, 52);
+       height: 65vh;
+       color: azure;
+       text-align: justify;
+   }
+   
+   #right{
+    width:50%;
+        display: flex;
+        
+}
+#circuit{
+    height:100vh;
+    width:100%;
+}
+#three{
+        height: 100vh;
+        width:100vw;
+        background-color: rgba(218, 218, 218, 0.979);
+        font-family: 'DM Serif Text', serif;
+        font-weight: bold;
+}
+#header{
+    border-bottom: 6px solid rgb(9,184,62);
+    color: rgb(9,184,62);
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+#container{
+    display: flex;
+    flex-direction:row;
+    border-right:1px dotted black;
+   
+}
+#items{
+    width: 33.33%;
+    display: flex;
+    flex-direction:column;
+    padding:0 3%;
+    margin:4% 0;
+    align-items: center;
+    
+
+}
+#items h2{
+    text-align: center;
+    background-color: rgb(87, 182, 182);
+    padding: 15px;
+    border-radius:10px;
+    color: aliceblue;
+    text-shadow: 1px rgb(219, 129, 11); 
+    box-shadow: 1px 1px 2px 1px rgb(255, 255, 255);
+
+}
+#items img{
+height: auto;
+width: 50%;
+/* border:1px solid violet; */
+padding:0px;
+margin: 20px;
+
+}
+#items h1{
+    text-align: center;
+    /* background-color: aqua; */
+    color: rgb(9,184,62);
+    padding: 10px;
+    /* border-radius:10px; */
+
+}
+#items p{
+    text-align: center;
+  
+}
+.border{
+    border-left:2px dotted rgb(104, 103, 103);
+    border-right:2px dotted rgb(92, 89, 89);
+
+}
+
+#four{
+    background-image: url("four-back.png");
+    width: 100vw;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:aliceblue;
+    font-family: 'Oswald', sans-serif;
+        
+}
+#img4_1{
+   display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+#icons i{
+    margin: 0 10px;
+    font-size:25px;
+    padding: 17px;
+    /* margin:5px; */
+    /* display: inline-block;*/
+    /* line-height:140px;    */
+     /* font-size:20px; */
+     text-align: center;
+    border-radius:50%;
+    background-color:grey; 
+    height: 55px;
+    width: 55px;
+    color: white;
+    transition-duration:300ms;
+    /* display: block; */
+    /* background-color:red; */
+    
+}
+
+#address{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    
+    
+}
+#left1{
+    font-size:30px;
+    /* border: 2px solid white; */
+    /* padding:10px;  */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+#right1{
+    /* border: 2px solid white; */
+    font-size:20px;
+    /* padding:1px;  */
+    display: flex;
+    flex-direction: column;
+    
+}
+#icons{
+    padding:20px;
+}
+
+#icons a:nth-child(1) i{  background-color: #21759b;
+}
+#icons a:nth-child(2) i{  background-color:rgb(0,119,181);
+}
+#icons a:nth-child(3) i{  background-color: #55acee;
+}
+
+#icons a:nth-child(1) i:hover{  background-color:white;
+color:#21759b
+}
+#icons a:nth-child(2) i:hover{  background-color:white;
+color: rgb(0,119,181);
+}
+#icons a:nth-child(3) i:hover{  background-color:white;
+color:  #55acee;
+}
+
+#copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 25px;
+    
+}
+
+    </style>
+</head>
+<body>
+    <div id="main">
+     <div id="page">
+         
+         <div id="nav">
+         <div id="logo">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+             <img src="logo-2.gif" alt="logo"  >
+         </div>
+            <div id="link">
+             <a href="#page">Home</a>
+             <a href="#two">About Shotej Tag</a>
+             <a href="#three">Impact</a>
+             <a href="#four">Contact Us</a>
+            </div>
+         </div>
+         <div id="homeImage">
+             <img src="homeImage.jpg" alt="">
+         </div>
+         <div id="paragraph">
+             <br>
+             <p>Thousands of farmers, food distributers and retailers in
+            Bangladesh throw away their valued food produce due to spoilage.</p> <br>
+            <p>This is happening because they can’t determine the exact freshness of it by visual inspection alone because of the varying</p> 
+                    <p>exposure of temperature the produces go through because of the lack of cold chain storages in Bangladesh</p>
+           <br> <p>That is why I, Saadman Faisal, have founded Shotej Tag to help address this problem of food wastage in Bangladesh.</p>
+         </div>
+     </div>
+     <div id="two">
+         <div id="left">
+          <div id="image-1_cont"><img src="logo-2.gif" id="image-1" alt="" ></div>
+          <div id="para-2">
+                <p><q>SHOTEJ (Fresh) Tag is an inexpensive freshness indicator for
+                perishable produces developed for the marginal supply chain
+                stakeholders of Bangladesh which will reduce premature food wastage 
+                by indicating when the food is actually going to expire.
+                It will do so by recording the surrounding 
+                varying temperature at a regular interval through a temperature sensor </q></p> 
+           
+          </div>
+         </div>
+         <div id="right">
+             <img id="circuit" src="circuit.png" alt="circuit">
+         </div>
+     </div>
+        <div id="three">
+            <h1 id="header">POSSIBLE IMPACT WITH SELLING OF 10000 SHOTEJ TAG IN BANGLADESH</h1>
+        
+        <div id="container">
+         <div id="items">
+          <h2>ENVIRONMENTAL IMPACT</h2>
+          <img src="items-1.gif" alt="">
+          <h1>SAVING 7.01
+          <br>MILLION KG</h1>
+          <p>OF CO2 EQUIVALENT</p>
+         </div>
+
+        
+            <div id="items" class="border">
+             <h2>IMPACT ON THE BUYERS</h2>
+             <img src="items-2.gif" alt="">
+             <h1>SAVING $123</h1>
+            
+             <p>IN 4 MONTHS BY USING A $18 <br>
+                PRODUCT</p>
+              </div>
+
+            
+                <div id="items">
+                 <h2>IMPACT ON CUSTOMERS</h2>
+                 <img src="items-3.gif" alt="">
+                 <h1>5% COST
+                    <br>REDUCTION/KG
+                 </h1>
+                 <p>BY INTRODUCING PRODUCT IN MARKET</p>
+                </div>
+       </div>
+    </div>
+
+    <div id="four">
+             <a href="#page" style=" display:block;font-weight:bold;text-align:center;font-size:35px;color:white;"> <i class="fa fa-chevron-up"></i></a>
+           <div id="img4_1"><img src="logo-4.gif" alt="" width="35%" height="auto;"></div>
+           <div id="address">
+               <div id="left1">
+                <h2>Follow Shotej Tag:</h2>
+                <div id="icons">
+                   <a href=" https://www.facebook.com/Shotej-Tag-292275895002087"><i id="facebook" class="fab fa-facebook-f"></i></a> 
+                   <a href="https://www.linkedin.com/company/shotej-tag/"><i class="fab fa-linkedin-in"></i></a> 
+                    <a href="https://twitter.com/ShotejT"> <i class="fab fa-twitter"></i></a>
+                   
+                </div>
+
+               </div>
+               <div id="right1">
+                   <h2>ADDRESS</h2>
+                   <br>
+                   <p>37/2, Lane-1, Block-A, Section-6,
+                    <br>Mirpur Dhaka. 10th Floor.</p>
+                    <br>
+                    <p>Phone: +8801550167289
+                     <br>Email: shotej_tag@gmail.com</p>
+               </div>
+           </div>
+        
+           <div id="copyright">
+            <p>2019 | Shotej Tag | All Rights Reserved</p 
+           </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+</body>
+</html>
